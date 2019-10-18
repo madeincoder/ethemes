@@ -1,0 +1,39 @@
+{
+    "name": "rongin",
+    "version": "2.0.0",
+    "description": "This is a rongin multipurpose theme",
+    "main": "index.js",
+    "scripts": {
+        "watch": "gulp watch",
+        "gulp": "gulp",
+        "serve": "live-server dist --wait=0",
+        "sass-build": "node-sass -r --output-style expanded src/scss/style.scss -o dist/assets/css --source-map true",
+        "sass-watch": "npm run sass-build && npm run sass-build -- -w",
+        "start": "concurrently \"npm run watch\" \"npm run sass-watch\" \"npm run serve\" --names \"🍺,💄,🌐\" --prefix name",
+        "build": "concurrently \"npm run gulp\" \"npm run sass-build\" --names \"🍺,💄\" --prefix name",
+        "push": "git add . && git commit -m \"commit message\" && git push origin master",
+        "pull": "git pull origin master"
+    },
+    "author": "Enamul Haque",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^3.6.1",
+        "gulp": "^3.9.1",
+        "gulp-cssbeautify": "^1.0.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-sass": "^3.2.1",
+        "gulp-watch": "^5.0.0"
+    },
+    "dependencies": {
+        "concurrently": "^3.6.1",
+        "gulp-file-include": "^2.0.1",
+        "gulp-html-beautify": "^1.0.1",
+        "gulp-prettify": "^0.5.0",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-twig": "^1.2.0",
+        "live-server": "^1.2.0",
+        "node-sass": "^4.9.3",
+        "npm": "^6.9.0",
+        "yarn": "^1.17.3"
+    }
+}
