@@ -32,7 +32,7 @@
         "gulp-sourcemaps": "^2.6.4",
         "gulp-twig": "^1.2.0",
         "live-server": "^1.2.0",
-        "node-sass": "^4.9.3",
+        "node-sass": "^7.0.0",
         "npm": "^6.9.0",
         "yarn": "^1.17.3"
     }
