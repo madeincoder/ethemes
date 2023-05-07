@@ -21,7 +21,7 @@
         "gulp": "^3.9.1",
         "gulp-cssbeautify": "^1.0.0",
         "gulp-imagemin": "^4.1.0",
-        "gulp-sass": "^3.2.1",
+        "gulp-sass": "^5.1.0",
         "gulp-watch": "^5.0.0"
     },
     "dependencies": {
@@ -32,7 +32,7 @@
         "gulp-sourcemaps": "^2.6.4",
         "gulp-twig": "^1.2.0",
         "live-server": "^1.2.0",
-        "node-sass": "^4.9.3",
+        "node-sass": "^8.0.0",
         "npm": "^6.9.0",
         "yarn": "^1.17.3"
     }
